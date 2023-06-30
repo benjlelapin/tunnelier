@@ -1,0 +1,232 @@
+{
+  "_fv": 39,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 280,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "",
+            "name": "TerreTexte"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 82,
+          "y": 47
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_terre",
+          "text": "Terre",
+          "onClick": {
+            "name": "BouttonTerre"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 92,
+          "y": 61
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty1",
+          "text": {
+            "fixedValue": "",
+            "name": "RocheTexte"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 178,
+          "y": 48
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_roche",
+          "text": "Roche",
+          "onClick": {
+            "name": "BouttonRoche"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 185,
+          "y": 61
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty2",
+          "text": {
+            "fixedValue": "",
+            "name": "PierreTexte"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 267,
+          "y": 48
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_pierre",
+          "text": "Pierre",
+          "onClick": {
+            "name": "BouttonPierre"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 278,
+          "y": 61
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty3",
+          "text": {
+            "fixedValue": "",
+            "name": "AndesiteTexte"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 101,
+          "y": 93
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_andesite",
+          "text": "Andésite",
+          "onClick": {
+            "name": "BouttonAndesite"
+          },
+          "width": 67,
+          "height": 20,
+          "x": 109,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty4",
+          "text": {
+            "fixedValue": "",
+            "name": "GraniteTexte"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 230,
+          "y": 94
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_granite",
+          "text": "Granite",
+          "onClick": {
+            "name": "BouttonGranite"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 243,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty5",
+          "text": {
+            "fixedValue": "",
+            "name": "DioriteTexte"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 99,
+          "y": 139
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_diorite",
+          "text": "Diorite",
+          "onClick": {
+            "name": "BouttonDiorite"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 109,
+          "y": 153
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty6",
+          "text": {
+            "fixedValue": "",
+            "name": "PierredesabimesTexte"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 200,
+          "y": 140
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_pierre_des_abimes",
+          "text": "Pierre des Abimes",
+          "onClick": {
+            "name": "BouttonPierredesabimes"
+          },
+          "width": 113,
+          "height": 20,
+          "x": 209,
+          "y": 154
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

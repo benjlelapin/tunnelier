@@ -1,0 +1,722 @@
+{
+  "mod_elements": [
+    {
+      "name": "Tunnelier",
+      "type": "tool",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tunnelier",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/item/TunnelierItem.java",
+          "src/main/resources/assets/tunnelier/models/item/tunnelier.json"
+        ]
+      }
+    },
+    {
+      "name": "TunnelierCraft",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tunnelier_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tunnelier/recipes/tunnelier_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "TunnelierQuandLobjetEstFabriquefondu",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tunnelier_quand_lobjet_est_fabriquefondu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/procedures/TunnelierQuandLobjetEstFabriquefonduProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PommeenCuivre",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pommeen_cuivre",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tunnelier/models/item/pommeen_cuivre.json",
+          "src/main/java/net/mcreator/tunnelier/item/PommeenCuivreItem.java"
+        ]
+      }
+    },
+    {
+      "name": "PommeenCuivreLeJoueurTermineDutiliserLitem",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pommeen_cuivre_le_joueur_termine_dutiliser_litem",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/procedures/PommeenCuivreLeJoueurTermineDutiliserLitemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ChairDeZombieEnCuivre",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chair_de_zombie_en_cuivre",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tunnelier/models/item/chair_de_zombie_en_cuivre.json",
+          "src/main/java/net/mcreator/tunnelier/item/ChairDeZombieEnCuivreItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ChairDeZombieEnCuivreLeJoueurTermineDutiliserLitem",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chair_de_zombie_en_cuivre_le_joueur_termine_dutiliser_litem",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/procedures/ChairDeZombieEnCuivreLeJoueurTermineDutiliserLitemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PommeEnCuivreCraft",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pomme_en_cuivre_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tunnelier/recipes/pomme_en_cuivre_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "ChairDeZombieEnCuivreCraft",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chair_de_zombie_en_cuivre_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tunnelier/recipes/chair_de_zombie_en_cuivre_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "CasseBloc",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "casse_bloc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/procedures/CasseBlocProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hammer",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hammer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/procedures/HammerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RemplaceLiquide",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remplace_liquide",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/procedures/RemplaceLiquideProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HammerEnergieXEnergie",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hammer_energie_x_energie",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/procedures/HammerEnergieXEnergieProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TerreTexte",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terre_texte",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/procedures/TerreTexteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RocheTexte",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roche_texte",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/procedures/RocheTexteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PierreTexte",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pierre_texte",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/procedures/PierreTexteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AndesiteTexte",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "andesite_texte",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/procedures/AndesiteTexteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GraniteTexte",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "granite_texte",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/procedures/GraniteTexteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DioriteTexte",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diorite_texte",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/procedures/DioriteTexteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PierredesabimesTexte",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pierredesabimes_texte",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/procedures/PierredesabimesTexteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BlocsRecuperes",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blocs_recuperes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/network/BlocsRecuperesButtonMessage.java",
+          "src/main/java/net/mcreator/tunnelier/client/gui/BlocsRecuperesScreen.java",
+          "src/main/java/net/mcreator/tunnelier/world/inventory/BlocsRecuperesMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "BouttonTerre",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boutton_terre",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/procedures/BouttonTerreProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BouttonRoche",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boutton_roche",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/procedures/BouttonRocheProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BouttonPierre",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boutton_pierre",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/procedures/BouttonPierreProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BouttonAndesite",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boutton_andesite",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/procedures/BouttonAndesiteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BouttonDiorite",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boutton_diorite",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/procedures/BouttonDioriteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BouttonGranite",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boutton_granite",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/procedures/BouttonGraniteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BouttonPierredesabimes",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boutton_pierredesabimes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/procedures/BouttonPierredesabimesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TunnelierEvenementAuClicDroitDansLair",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tunnelier_evenement_au_clic_droit_dans_lair",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/procedures/TunnelierEvenementAuClicDroitDansLairProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RemplaceSeulementLiquide",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remplace_seulement_liquide",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tunnelier/procedures/RemplaceSeulementLiquideProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "energie",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "terre",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "roche",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "pierre",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "diorite",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "granite",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "andesite",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "pierredesabimes",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "gui.tunnelier.blocs_recuperes.button_diorite": "Diorite",
+      "gui.tunnelier.blocs_recuperes.button_pierre_des_abimes": "Pierre des Abimes",
+      "item.tunnelier.pommeen_cuivre": "Pomme en Cuivre",
+      "item.tunnelier.tunnelier": "Tunnelier",
+      "gui.tunnelier.blocs_recuperes.button_andesite": "Andésite",
+      "item.tunnelier.chair_de_zombie_en_cuivre": "Chair De Zombie En Cuivre",
+      "gui.tunnelier.blocs_recuperes.button_terre": "Terre",
+      "gui.tunnelier.blocs_recuperes.button_roche": "Roche",
+      "gui.tunnelier.blocs_recuperes.button_granite": "Granite",
+      "gui.tunnelier.blocs_recuperes.button_pierre": "Pierre"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "tunnelier",
+    "modName": "tunnelier",
+    "version": "1.0.0",
+    "author": "Benjamin Feller, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "modElementsPackage": "net.mcreator.tunnelier",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300110610
+}

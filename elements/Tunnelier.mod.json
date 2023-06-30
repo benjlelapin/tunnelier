@@ -1,0 +1,38 @@
+{
+  "_fv": 39,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "tunnelier",
+    "customModelName": "Normal",
+    "name": "Tunnelier",
+    "specialInfo": [
+      "Mine en fonction de l'energie"
+    ],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 1,
+    "efficiency": 12.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 10000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "TunnelierEvenementAuClicDroitDansLair"
+    },
+    "onCrafted": {
+      "name": "TunnelierQuandLobjetEstFabriquefondu"
+    },
+    "onBlockDestroyedWithTool": {
+      "name": "HammerEnergieXEnergie"
+    }
+  }
+}
